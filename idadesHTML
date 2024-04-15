@@ -1,0 +1,53 @@
+http://127.0.0.1:5500/index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $idade =  prompt("Qual a sua idade ?")
+        $resultado = $idade
+
+        if($idade < 12) 
+        {
+          $resultado = ' CRIANÇA'
+        }
+        else 
+        
+          if($idade < 21)
+          { 
+            $resultado = ' JOVEM'
+        }
+        else
+         if($idade < 60)
+         { 
+            $resultado = ' ADULTO'
+         }
+        else
+        {
+            $resultado = ' IDOSO'
+        }
+                document.write(" <center> <font color='red' size='7'> Tabelas classificação </font>")
+                document.write("<table border='1' width='600'>")
+                document.write("<tr bgcolor='#9932CC' align='center'>")
+                document.write(" <td width='350' align='center'><B>IDADE</B></td>")
+                document.write(" <td width='80' align='center'><B>CLASSIFICAÇÃO</B></td>")
+                document.write(" </tr>")
+                document.write(" <tr>")
+                document.write("<td>")
+                document.write($idade)
+                document.write("</td>")
+                document.write("<td>")
+                document.write($resultado)
+                document.write("</td>")
+                document.write(" </tr>")
+                document.write("</table>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
